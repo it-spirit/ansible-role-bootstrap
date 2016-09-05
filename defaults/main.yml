@@ -2,8 +2,15 @@
 # defaults file for itspirit.bootstrap
 
 sysadmins: []
-  # - name: username
-  #   state: present
-  #   shell: '/bin/bash'
-  #   password: 'secret'
-  #   ssh_key: 'ssh key'
+# - name: username
+#   fullname: User Name
+#   state: present
+#   shell: '/bin/bash'
+#   password: 'secret'
+#   email: username@example.com
+#   ssh_key: 'ssh key'
+
+
+# geerlingguy.firewall
+firewall_allowed_tcp_ports:
+  - '22'
