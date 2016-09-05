@@ -22,3 +22,12 @@
     password: '{{ item.password | default("") }}'
   with_items: '{{ sysadmins }}'
   no_log: true
+
+
+- name: Ensure authorized keys for active system administrators are set up.
+  authorized_key:
+    user: '{{ item.name }}'
+    key: '{{ item.ssh_key }}'
+  when: '{{ item.state == "present" }}'
+  with_items: '{{ sysadmins }}'
+  no_log: true
