@@ -12,3 +12,13 @@
   apt:
     pkg: acl
     state: present
+
+
+- name: Ensure system administrators are set up.
+  user:
+    name: '{{ item.name }}'
+    state: '{{ item.state | default("present") }}'
+    shell: '{{ item.shell | default("/bin/bash") }}'
+    password: '{{ item.password | default("") }}'
+  with_items: '{{ sysadmins }}'
+  no_log: true

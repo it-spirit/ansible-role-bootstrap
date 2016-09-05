@@ -1,2 +1,9 @@
 ---
 # defaults file for itspirit.bootstrap
+
+sysadmins: []
+  # - name: username
+  #   state: present
+  #   shell: '/bin/bash'
+  #   password: 'secret'
+  #   ssh_key: 'ssh key'
