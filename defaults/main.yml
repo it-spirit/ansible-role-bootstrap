@@ -1,5 +1,5 @@
 ---
-# defaults file for itspirit.bootstrap
+# defaults file for spirit.bootstrap
 
 sysadmins: []
 # - name: username

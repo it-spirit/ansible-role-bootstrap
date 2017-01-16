@@ -1,7 +1,7 @@
-itspirit.bootstrap
-==================
+spirit.bootstrap
+================
 
-Ansible role to bootstrap new it-spirit servers.
+Ansible role to bootstrap new servers for it-spirit.
 
 Use this role to do the initial provisioning of your new server.
 It will ensure that your software packages are up to date and your system administrators are set up.
@@ -59,14 +59,14 @@ This role has dependencies to the following roles:
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too::
+::
 
    - hosts: all
      vars_files:
        - vars/secrets.yml
 
      roles:
-       - itspirit.bootstrap
+       - spirit.bootstrap
 
 Inside ``vars/secrets.yml``::
 
@@ -89,4 +89,4 @@ MIT
 Author Information
 ------------------
 
-This role was created in 2016 by `it-spirit Software <http://it-spir.it>`_.
+This role was created 2016-2017 by `it-spirit Software <http://it-spir.it>`_.
