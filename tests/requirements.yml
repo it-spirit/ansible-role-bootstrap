@@ -1,0 +1,5 @@
+- src: franklinkim.sudo
+  version: 1.4.0
+
+- src: geerlingguy.firewall
+  version: 1.0.9
