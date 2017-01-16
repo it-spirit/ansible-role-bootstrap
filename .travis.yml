@@ -22,7 +22,7 @@ install:
   - printf '[defaults]\nroles_path=../' >ansible.cfg
 
 before_script:
-  - ansible-galaxy install --role-file requirements.yml
+  - ansible-galaxy install --role-file tests/requirements.yml
 
 script:
   # Basic role syntax check
